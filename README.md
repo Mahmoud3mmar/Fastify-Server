@@ -109,7 +109,8 @@ the Fastify-App is designed  to handle concurrent requests efficiently.
 
 ## Dependencies
 - `mongoose`: MongoDB object modeling tool for Node.js.
-- `Fastify`: a web framework for Node.js s.
+- `Fastify`: a web framework for Node.js .
+- `nodemon`: Node.js based applications by automatically restarting the node application when file changes in the directory are detected..
 - `dotenv`: Loads environment variables from a `.env` file.
 - `ws`: package provides a simple WebSocket client and server implementation for Node.js.
 - `@fastify/swagger-ui:`: This plugin provides a UI interface for viewing Swagger documentation.
