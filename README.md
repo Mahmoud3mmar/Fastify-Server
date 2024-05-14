@@ -89,8 +89,8 @@ the Fastify-App is designed  to handle concurrent requests efficiently.
 │   │            └── user.service.js
 │   │
 │   ├── Utils
-│   │   ├── ErrorHandler.js
-│   │   
+│   │   ├── Error.Handler.js
+│   │   └── Socket.Handler.ts 
 │   └── db
 │       └── database.ts
 │       
