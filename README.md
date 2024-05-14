@@ -8,6 +8,50 @@ The API follows best practices for RESTful architecture, utilizing clear and int
 Each endpoint is documented with Swagger documentation to facilitate ease of use and integration. Additionally, 
 the Fastify-App is designed  to handle concurrent requests efficiently.
 
+
+## Endpoints
+
+## GET
+### GetAllUsers
+- **Description:** Retrieves all users from the server.
+- **URL:** [http://localhost:3000/users](http://localhost:3000/users)
+
+## POST
+### CreateUser
+- **Description:** Creates a new user on the server.
+- **URL:** [http://localhost:3000/users](http://localhost:3000/users)
+- **Body:**
+  - **Format:** raw (json)
+  - **Content:**
+    ```json
+    {
+        "firstName": "Monty",
+        "lastName": "Ebert",
+        "email": "Raymond66@gmail.com"
+    }
+    ```
+
+## PATCH
+### UpdateUser
+- **Description:** Updates an existing user on the server.
+- **URL:** [http://localhost:3000/users/664258bb020a11e78df81c58](http://localhost:3000/users/664258bb020a11e78df81c58)
+- **Body:**
+  - **Format:** raw (json)
+  - **Content:**
+    ```json
+    {
+        "firstName": "Oswaldo",
+        "lastName": "Pouros",
+        "email": "Keshaun_Parker@hotmail.com"
+    }
+    ```
+
+## DELETE
+### DeleteUser
+- **Description:** Deletes a user from the server.
+- **URL:** [http://localhost:3000/users/664258ba020a11e78df81c55](http://localhost:3000/users/664258ba020a11e78df81c55)
+
+
 ## Project Structure
 ```
 ├── src
