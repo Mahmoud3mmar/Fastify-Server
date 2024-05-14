@@ -1,4 +1,7 @@
-#Fastify-App :
+# Fastify Server :
+
+## Overview
+
 The Fastify-App is a RESTful API server built using the Fastify framework in Node.js.
 It provides endpoints for managing user data, including creating, reading, updating, and deleting user records.
 The API follows best practices for RESTful architecture, utilizing clear and intuitive endpoint URLs and HTTP methods. 
