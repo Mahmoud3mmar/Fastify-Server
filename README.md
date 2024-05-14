@@ -7,7 +7,14 @@ The API follows best practices for RESTful architecture, utilizing clear and int
 Each endpoint is documented with Swagger documentation to facilitate ease of use and integration. Additionally, 
 the Fastify-App is designed  to handle concurrent requests efficiently.
 
-
+## Dependencies
+- `mongoose`: MongoDB object modeling tool for Node.js.
+- `Fastify`: a web framework for Node.js .
+- `nodemon`: Node.js based applications by automatically restarting the node application when file changes in the directory are detected..
+- `dotenv`: Loads environment variables from a `.env` file.
+- `ws`: package provides a simple WebSocket client and server implementation for Node.js.
+- `@fastify/swagger-ui:`: This plugin provides a UI interface for viewing Swagger documentation.
+- 
 ## Endpoints
 
 ## GET
@@ -74,13 +81,13 @@ the Fastify-App is designed  to handle concurrent requests efficiently.
 
 
 
+
+
 ## Project Structure
 ```
 ├── src
 │   └── modules
 │   │    └── User
-│   │        ├── Controllers
-│   │        │   └── users.controller.js
 │   │        ├── Models
 │   │        │   └── user.model.js
 │   │        ├── Routes
@@ -99,22 +106,44 @@ the Fastify-App is designed  to handle concurrent requests efficiently.
 └── README.md
 ```
 
-
-
-- **Controllers**: Contains the controller functions for handling HTTP requests.
-- **Models**: Defines the Mongoose schema for the "brands" collection.
+- **Models**: Defines the Mongoose schema for the "User" collection.
 - **Services**: This directory holds the service layer functions that interact with the database or perform business logic related to users.
 - **Routes**: Defines the API routes for the brand endpoints.
 - **Utils**: Contains utility functions, such as error handling.
 
-## Dependencies
-- `mongoose`: MongoDB object modeling tool for Node.js.
-- `Fastify`: a web framework for Node.js .
-- `nodemon`: Node.js based applications by automatically restarting the node application when file changes in the directory are detected..
-- `dotenv`: Loads environment variables from a `.env` file.
-- `ws`: package provides a simple WebSocket client and server implementation for Node.js.
-- `@fastify/swagger-ui:`: This plugin provides a UI interface for viewing Swagger documentation.
 
+## Instructions
 
+1. **Important Step**
+
+   - Ensure you have Node.js installed on your system. You can download it from the official Node.js website if not already installed.
+     
+  
+
+2. **Install the necessary dependencies**
+
+   - Run the command [npm init -y] to initialize a new Node.js project with default settings.
+ 
+   - Run the command [npm install ws nodemon dotenv @fastify/swagger-ui Fastify mongoose] .
+  
+
+3. **Create a .env file:**
+
+   - Create a new file named .env in your project directory.
+   - Inside the .env file, define the environement variables with the desired values like the .env.example file.
+     
+4. **Run the code**
+
+   - Open your terminal or command prompt.
+   - Navigate to your project directory if you're not already there.
+   - Run the command [nodemon] to start the WebSocket server.
+   - If everything is set up correctly, you should see a message indicating that the server is connected to DB & WebSocket server is listening on the specified port.
+
+5. **Testing**
+   - You can test the crud operations by  using postman on the specified  URL & ROUTE while making sure a secure and successful connection to DB. 
+   - You can test the WebSocket server using WebSocket integration by  using postman on the specified WebSocket URL (ws://localhost:**** by default).
+   - Send messages to the server and verify that it receives and responds to them correctly.
+
+   
 This documentation provides an overview of the Brand Transformation API, its endpoints, how to run the project, project structure, and dependencies. It serves as a guide for developers and users to understand and interact with the API.
 
